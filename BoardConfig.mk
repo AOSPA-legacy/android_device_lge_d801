@@ -16,7 +16,7 @@
 
 include device/lge/g2-common/BoardConfigCommon.mk
 
-TARGET_KERNEL_CONFIG := custom_d801_defconfig
+TARGET_KERNEL_CONFIG := d801a_defconfig
 
 TARGET_OTA_ASSERT_DEVICE := g2,d801,galbi
 
