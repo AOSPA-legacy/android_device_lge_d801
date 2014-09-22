@@ -12,10 +12,6 @@
         "revision":     "cm-11.0"
     },
     {
-        "repository":   "android_device_lge_d801",
-        "target_path":  "device/lge/d801"
-    },
-    {
         "repository":   "AOSPA-legacy/android_device_lge_g2-common",
         "target_path":  "device/lge/g2-common"
     },
@@ -29,6 +25,6 @@
         "remote":       "github",
         "repository":   "jakew02/android_kernel_lge_msm8974",
         "target_path":  "kernel/lge/msm8974",
-        "revision":     "kitkat"
+        "revision":     "fresh_20c"
     }
 ]
