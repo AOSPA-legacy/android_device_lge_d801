@@ -14,31 +14,9 @@
 # limitations under the License.
 #
 
-# Sample: This is where we'd set a backup provider if we had one
-# $(call inherit-product, device/sample/products/backup_overlay.mk)
-
-$(call inherit-product-if-exists, vendor/lge/galbi/galbi-gsm-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/d801/d801-vendor.mk)
 $(call inherit-product, device/lge/g2-common/g2.mk)
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
-PRODUCT_DEVICE := d801
-PRODUCT_NAME := full_d801
-PRODUCT_BRAND := LGE
-PRODUCT_MODEL := LG-D801
-PRODUCT_MANUFACTURER := lge
-PRODUCT_RESTRICT_VENDOR_FILES := false
-
-## overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
-PRODUCT_PROPERTY_OVERRIDES += \
-	telephony.lteOnGsmDevice=1 \
-	ro.telephony.default_network=9
-
-# NFC packages
-PRODUCT_PACKAGES += \
-    nfc_nci.g2 \
-    NfcNci
 
