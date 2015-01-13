@@ -5,7 +5,7 @@ $(call inherit-product, vendor/pa/config/gsm.mk)
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
-# Inherit some common CM stuff.
+# Inherit some common PA stuff.
 $(call inherit-product, vendor/pa/config/common_full_phone.mk)
 
 # Enhanced NFC
